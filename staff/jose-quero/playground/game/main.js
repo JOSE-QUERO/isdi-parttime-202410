@@ -1,15 +1,28 @@
 var root = document.body.querySelector('#root')
 
+document.body.style.display = 'flex'
+document.body.style.alignItems = 'center'
+document.body.style.justifyContent = 'center'
+document.body.style.height = '100vh'
+document.body.style.margin = '0'
+
 var mrpotato = document.createElement('div')
-mrpotato.style.width = '200px'
-mrpotato.style.height = '200px'
-mrpotato.style.backgroundColor = 'brown'
+mrpotato.style.width = '500px'
+mrpotato.style.height = '500px'
+mrpotato.style.backgroundImage = 'url("images/armario-fondo.jpg")'
+mrpotato.style.backgroundSize = 'cover'
+mrpotato.style.backgroundPosition = 'center'
+mrpotato.style.border = '10px solid #000'
+mrpotato.style.display = 'flex'
+mrpotato.style.alignItems = 'center'
+mrpotato.style.justifyContent = 'center'
+mrpotato.style.position = 'relative'
 root.appendChild(mrpotato)
 
 
 var mrpotatoImage = document.createElement('img')
 mrpotatoImage.src = 'images/mrpotato.png'
-mrpotatoImage.style.width = '200px'
+mrpotatoImage.style.width = '500px'
 mrpotatoImage.style.position = 'absolute'
 mrpotatoImage.style.zIndex = 0
 
@@ -17,25 +30,26 @@ mrpotato.appendChild(mrpotatoImage)
 
 var mrpotatoNose = document.createElement('img')
 mrpotatoNose.src = 'images/nariz-mrpotato.png'
-mrpotatoNose.style.width = '50px'
+mrpotatoNose.style.width = '100px'
 mrpotatoNose.style.position = 'absolute'
 mrpotato.appendChild(mrpotatoNose)
 
 var mrpotatoHat = document.createElement('img')
 mrpotatoHat.src = 'images/sombrero-mrpotato.png'
-mrpotatoHat.style.width = '100px'
+mrpotatoHat.style.width = '250px'
 mrpotatoHat.style.position = 'absolute'
 mrpotatoHat.style.zIndex = 50
 mrpotato.appendChild(mrpotatoHat)
 
+
 mrpotatoHatCoords = {
-    x: 110,
-    y: 125
+    x: 260,
+    y: 300
 }
 
 mrpotatoNoseCoords = {
     x: 20,
-    y: 150
+    y: 20
 }
 
 mrpotatoHat.style.left = mrpotatoHatCoords.x + 'px'
