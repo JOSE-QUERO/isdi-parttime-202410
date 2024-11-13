@@ -140,7 +140,7 @@ homeCreatePostForm.onsubmit = function (event) {
             homePost.appendChild(postAuthor)
 
             var postImage = document.createElement('img')
-            postImage - src = post.image
+            postImage.src = post.image
             homePost.appendChild(postImage)
 
             var postText = document.createElement('p')
